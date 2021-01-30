@@ -1,0 +1,100 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+	<title>Synthwave.store</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no,shrink-to-fit=no">
+  <meta name="author" content="Marquizzo">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Aclonica&display=swap" rel="stylesheet">
+	<style type="text/css">
+		body, html{
+			margin: 0px;
+			padding: 0px;
+			overflow: hidden;
+			background: #000;
+			height: 100vh;
+			font-family: Arial, Helvetica, sans-serif;
+			color: #efe4da;
+			line-height: 1;
+		}
+		main {
+			width: 100%;
+			height: 100%;
+			overflow: hidden;
+		}
+		header {
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+    h1, p {
+			margin: 0;
+      font-family: 'Aclonica', sans-serif;
+      line-height: 125%;
+
+		}
+		h1 {
+      font-size: 36px;
+		}
+    p {
+      font-size: 16px;
+		}
+    footer {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      text-align: center;
+      width: 100vw;
+      text-transform: uppercase;
+      margin-bottom: 60px;
+    }
+    #audio-btn {
+      position: fixed;
+      z-index: 200;
+      left: 0;
+      top: 0;
+      width: 100vw;
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+      background: transparent;
+      border: none;
+    }
+    #audio-btn:focus {
+      outline: none;
+    }
+    @media (max-width: 702px) {
+      footer {
+        margin-bottom: 46px;
+      }
+      h1 {
+        font-size: 24px;
+      }
+      p {
+        font-size: 14px;
+      }
+    }
+	</style>
+</head>
+<body>
+<button id='audio-btn'></button>
+<main id="pageMain">
+<canvas id="webgl-canvas"></canvas>
+<header>
+</header>
+</main>
+
+<!-- JS Bundle --> 
+<script src="js/main.js"></script>
+
+<footer>
+  <!-- <audio controls autoplay>
+    <source src="https://ecast.myautodj.com/public1channel" type="audio/mpeg">
+  </audio> -->
+  <h1>Mathsynthwave store</h1>
+  <p>(click anywhere to play radio)</p>
+</footer>
+</body>
+</html>
